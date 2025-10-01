@@ -1,0 +1,24 @@
+﻿<Window x:Class="MurzayanovAutoservice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MurzayanovAutoservice"
+        mc:Ignorable="d"
+        Title="Мурзаянов" Height="450" Width="800" FontFamily="Tw Cen MT" Icon="/Images/service_logo.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FFFFFFE1"></Grid>
+        
+        <Image HorizontalAlignment="Left" VerticalAlignment="Center"  Source="/Images/service_logo.png" Height="50" Margin="5 0 0 0" />
+        <TextBlock Text="Услуги автосервиса" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"></TextBlock>
+        <Button Name="ButtonBack"  Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Button_Click"></Button>
+
+        <Frame Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"/>
+    </Grid>
+</Window>
