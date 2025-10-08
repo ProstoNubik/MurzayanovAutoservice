@@ -11,7 +11,7 @@ namespace MurzayanovAutoservice
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Service
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,13 +20,20 @@ namespace MurzayanovAutoservice
             this.ClientService = new HashSet<ClientService>();
             this.ServicePhoto = new HashSet<ServicePhoto>();
         }
-    
+
         public int ID { get; set; }
         public string Title { get; set; }
         public decimal Cost { get; set; }
         public string Duration { get; set; }
         public string Description { get; set; }
         public double Discount { get; set; }
+
+        public int DiscountInt {
+            get
+            {
+                return (int)(Discount * 100);
+            }
+        }
         public string MainImagePath { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
