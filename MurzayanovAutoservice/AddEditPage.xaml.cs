@@ -50,7 +50,7 @@ namespace MurzayanovAutoservice
             {
                 errors.AppendLine("Укажите скидку.");
             }
-            if (string.IsNullOrWhiteSpace(_currentService.Duration))
+            if (_currentService.Duration < 0 || _currentService.Duration > 240)
             {
                 errors.AppendLine("Укажите длительность услуги.");
             }

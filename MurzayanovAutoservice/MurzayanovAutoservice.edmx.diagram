@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff713e191cef42d895e205514ceb1f1a" Name="Diagram1">
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.ClientService" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Gender" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Service" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.ServicePhoto" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="МурзаяновАвтосервисModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.AttachedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.TagOfClient" ManuallyRouted="false" />
+        <AssociationConnector Association="МурзаяновАвтосервисModel.FK_ServicePhoto_Service" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

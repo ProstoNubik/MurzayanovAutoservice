@@ -68,56 +68,59 @@
       <DependentUpon>AddEditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Client.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientService.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="DocumentByService.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Manufacturer.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
-    <Compile Include="MurzayanovModel.Context.cs">
+    <Compile Include="MurzayanovAutoservice.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MurzayanovModel.Context.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="MurzayanovModel.cs">
+    <Compile Include="MurzayanovAutoservice.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
-    <Compile Include="MurzayanovModel.Designer.cs">
+    <Compile Include="MurzayanovAutoservice.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MurzayanovModel.edmx</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.edmx</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductPhoto.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductSale.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Service.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ServicePage.xaml.cs">
       <DependentUpon>ServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ServicePhoto.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.xaml.cs">
+      <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tag.cs">
-      <DependentUpon>MurzayanovModel.tt</DependentUpon>
+      <DependentUpon>MurzayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Page Include="AddEditPage.xaml">
       <SubType>Designer</SubType>
@@ -136,6 +139,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,21 +165,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="MurzayanovModel.edmx">
+    <EntityDeploy Include="MurzayanovAutoservice.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MurzayanovModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>MurzayanovAutoservice.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="MurzayanovModel.edmx.diagram">
-      <DependentUpon>MurzayanovModel.edmx</DependentUpon>
+    <None Include="App.Config" />
+    <None Include="MurzayanovAutoservice.edmx.diagram">
+      <DependentUpon>MurzayanovAutoservice.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\service_logo.ico" />
@@ -182,16 +187,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MurzayanovModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MurzayanovModel.edmx</DependentUpon>
-      <LastGenOutput>MurzayanovModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="MurzayanovModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MurzayanovModel.edmx</DependentUpon>
-      <LastGenOutput>MurzayanovModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="Услуги автосервиса\ПустойСервис.png" />
     <Resource Include="Услуги автосервиса\diz.jpg" />
     <Resource Include="Услуги автосервиса\rulevoe-upravlenie-avtomobilya.jpg" />
@@ -210,6 +205,18 @@
     <Resource Include="Услуги автосервиса\Топливная система.png" />
     <Resource Include="Услуги автосервиса\Шиномонтаж.jpg" />
     <Resource Include="Услуги автосервиса\Электрика.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MurzayanovAutoservice.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MurzayanovAutoservice.edmx</DependentUpon>
+      <LastGenOutput>MurzayanovAutoservice.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MurzayanovAutoservice.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MurzayanovAutoservice.edmx</DependentUpon>
+      <LastGenOutput>MurzayanovAutoservice.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
